@@ -311,3 +311,12 @@ section {
 .offering-description {
     color: var(--sunlit-clay);
 }
+
+.offering-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.offering-option {
+    flex: 1 1 33.33%;
+}
