@@ -124,6 +124,7 @@ table {
     --spacing-200: 1rem;
     --spacing-400: 2rem;
     --spacing-600: 4rem;
+    --spacing-700: 6rem;
     --spacing-800: 8rem;
 }
 
@@ -160,7 +161,8 @@ header {
 /*& general styling */
 
 section {
-    padding: var(--spacing-600);
+    padding: var(--spacing-700);
+    letter-spacing: 2px;
 }
 
 .green-section {
@@ -206,7 +208,10 @@ section {
 }
 
 .hero-content-text {
-    max-width: 40%;
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-600);
 }
 
 .establishment {
@@ -218,6 +223,7 @@ section {
 }
 
 .specials-button {
+    width: fit-content;
     border: none;
     background-color: var(--sunlit-clay);
     color: var(--primary-green);
@@ -227,5 +233,5 @@ section {
 }
 
 #bakery-img {
-    height: 30rem;
+    height: 35rem;
 }
