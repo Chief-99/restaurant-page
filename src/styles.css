@@ -257,7 +257,7 @@ section {
 }
 
 .story-content-text {
-    max-width: 40%;
+    max-width: 35%;
     display: flex;
     flex-direction: column;
     gap: var(--spacing-400);
@@ -267,6 +267,12 @@ section {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-200);
+}
+
+.story-signature {
+    font-family: var(--playfair-italic);
+    font-size: 2rem;
+    color: var(--saddle-brown);
 }
 
 #shelf-img {
