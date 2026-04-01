@@ -306,3 +306,8 @@ section {
     gap: var(--spacing-400);
     align-items: center;
 }
+
+.offering-content .pretitle,
+.offering-description {
+    color: var(--sunlit-clay);
+}
