@@ -127,6 +127,8 @@ table {
     --spacing-800: 8rem;
 }
 
+/*& navbar and header */
+
 header {
     overflow: hidden;
     position: sticky;
@@ -155,6 +157,8 @@ header {
     cursor: pointer;
 }
 
+/*& general styling */
+
 section {
     padding: var(--spacing-600);
 }
@@ -171,7 +175,7 @@ section {
 
 .pretitle {
     font-size: var(--pretitle-fs);
-    letter-spacing: 3px;
+    letter-spacing: 5px;
 }
 
 .content-title {
@@ -193,17 +197,34 @@ section {
     letter-spacing: 1px;
 }
 
+/*& hero section  */
+
 .hero-content {
     display: flex;
     justify-content: center;
-    gap: var(--spacing-400);
+    gap: var(--spacing-600);
 }
 
 .hero-content-text {
     max-width: 40%;
 }
 
+.establishment {
+    color: var(--sunlit-clay);
+}
 
+.hero-description {
+    color: var(--sunlit-clay);
+}
+
+.specials-button {
+    border: none;
+    background-color: var(--sunlit-clay);
+    color: var(--primary-green);
+    font-family: var(--lora);
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+}
 
 #bakery-img {
     height: 30rem;
