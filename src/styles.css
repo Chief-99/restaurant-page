@@ -137,6 +137,7 @@ header {
     font-family: var(--playfair-italic), serif;
     font-style: italic;
     width: 100%;
+    z-index: 1;
 }
 
 #navbar {
@@ -277,4 +278,20 @@ section {
 
 #shelf-img {
     height: 30rem;
+}
+
+.story-icon-frame {
+    border: solid 2px var(--secondary-green);
+    padding: var(--spacing-400);
+    position: relative;
+}
+
+.story-icon-frame::before {
+    content: '';
+    position: absolute;
+    top: -12px;
+    left: -12px;
+    right: 12px;
+    bottom: 12px;
+    border: 2px solid var(--sunlit-clay);
 }
