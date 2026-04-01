@@ -4,8 +4,8 @@
 
 @font-face {
     font-family: 'Lora';
-    src: url('webfontkit/lora-variablefont_wght-webfont.woff2') format('woff2'),
-         url('webfontkit/lora-variablefont_wght-webfont.woff') format('woff');
+    src: url('webfontkit/regular/lora-variablefont_wght-webfont.woff2') format('woff2'),
+         url('webfontkit/regular/lora-variablefont_wght-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -16,8 +16,29 @@
 
 @font-face {
     font-family: 'Playfair Display';
-    src: url('webfontkit/playfairdisplay-variablefont_wght-webfont.woff2') format('woff2'),
-         url('webfontkit/playfairdisplay-variablefont_wght-webfont.woff') format('woff');
+    src: url('webfontkit/regular/playfairdisplay-variablefont_wght-webfont.woff2') format('woff2'),
+         url('webfontkit/regular/playfairdisplay-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Lora Italic';
+    src: url('webfontkit/italic/lora-italic-variablefont_wght-webfont.woff2') format('woff2'),
+         url('webfontkit/italic/lora-italic-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'PlayFair Display Italic';
+    src: url('webfontkit/italic/playfairdisplay-italic-variablefont_wght-webfont.woff2') format('woff2'),
+         url('webfontkit/italic/playfairdisplay-italic-variablefont_wght-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -73,14 +94,15 @@ table {
 }
 
 :root {
+    --nav-green: #1F2A13;
     --primary-green: #283618;
     --secondary-green: #606c38;
-    --cornsilk: #fefae0;
+    --primary-cream: #fefae0;
     --sunlit-clay: #dda15e;
     --saddle-brown: #884e1b;
 
-    --logo-fs: ;
-    --nav-tab-fs: ;
+    --logo-fs: 1.8rem;
+    --nav-tab-fs: 1.3rem;
     --pretitle-fs: ;
     --content-title-fs: ;
     --secondary-title-fs: ;
@@ -94,10 +116,39 @@ table {
 
     --lora: 'Lora';
     --playfair: 'Playfair Display';
+    --lora-italic: 'Lora Italic';
+    --playfair-italic: 'Playfair Display Italic';
 
-    --spacing-100: ;
-    --spacing-200: ;
-    --spacing-400: ;
-    --spacing-600: ;
-    --spacing-800: ;
+    --spacing-100: 0.5rem;
+    --spacing-200: 1rem;
+    --spacing-400: 2rem;
+    --spacing-600: 4rem;
+    --spacing-800: 8rem;
+}
+
+header {
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    font-family: var(--playfair-italic);
+    width: 100%;
+}
+
+#navbar {
+    background-color: var(--nav-green);
+    color: var(--primary-cream);
+    padding: var(--spacing-400);
+    font-size: var(--logo-fs);
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 3px var(--saddle-brown);
+}
+
+#navbar button {
+    border: none;
+    background-color: transparent;
+    font-family: var(--lora);
+    font-size: var(--nav-tab-fs);
+    color: var(--sunlit-clay);
+    cursor: pointer;
 }
