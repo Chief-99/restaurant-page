@@ -4,9 +4,9 @@
 
 @font-face {
     font-family: 'Lora';
-    src: url('webfontkit/regular/lora-variablefont_wght-webfont.woff2') format('woff2'),
+    src: url('webfontkit/regular/Lora-VariableFont_wght.ttf') format('truetype'),
          url('webfontkit/regular/lora-variablefont_wght-webfont.woff') format('woff');
-    font-weight: normal;
+    font-weight: 400 700;
     font-style: normal;
 
 }
@@ -16,19 +16,19 @@
 
 @font-face {
     font-family: 'Playfair Display';
-    src: url('webfontkit/regular/playfairdisplay-variablefont_wght-webfont.woff2') format('woff2'),
+    src: url('webfontkit/regular/PlayfairDisplay-VariableFont_wght.ttf') format('truetype'),
          url('webfontkit/regular/playfairdisplay-variablefont_wght-webfont.woff') format('woff');
-    font-weight: normal;
+    font-weight: 100 900;
     font-style: normal;
 
 }
 
 @font-face {
     font-family: 'Lora Italic';
-    src: url('webfontkit/italic/lora-italic-variablefont_wght-webfont.woff2') format('woff2'),
+    src: url('webfontkit/italic/Lora-Italic-VariableFont_wght.ttf') format('truetype'),
          url('webfontkit/italic/lora-italic-variablefont_wght-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+    font-weight: 400 700;
+    font-style: italic;
 
 }
 
@@ -37,10 +37,10 @@
 
 @font-face {
     font-family: 'PlayFair Display Italic';
-    src: url('webfontkit/italic/playfairdisplay-italic-variablefont_wght-webfont.woff2') format('woff2'),
+    src: url('webfontkit/italic/PlayfairDisplay-Italic-VariableFont_wght.ttf') format('truetype'),
          url('webfontkit/italic/playfairdisplay-italic-variablefont_wght-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+    font-weight: 100 900;
+    font-style: italic;
 
 }
 
@@ -94,6 +94,7 @@ table {
 }
 
 :root {
+    --text-charcoal: #2e362a;
     --nav-green: #1F2A13;
     --primary-green: #283618;
     --secondary-green: #606c38;
@@ -102,11 +103,11 @@ table {
     --saddle-brown: #884e1b;
 
     --logo-fs: 1.8rem;
-    --nav-tab-fs: 1.3rem;
-    --pretitle-fs: ;
-    --content-title-fs: ;
+    --nav-tab-fs: 1rem;
+    --pretitle-fs: 1rem;
+    --content-title-fs: 5rem;
     --secondary-title-fs: ;
-    --content-description-fs: ;
+    --content-description-fs: 1.4rem;
     --option-title-fs: ;
     --option-description-fs: ;
     --special-type-fs: ;
@@ -130,7 +131,8 @@ header {
     overflow: hidden;
     position: sticky;
     top: 0;
-    font-family: var(--playfair-italic);
+    font-family: var(--playfair-italic), serif;
+    font-style: italic;
     width: 100%;
 }
 
@@ -147,8 +149,62 @@ header {
 #navbar button {
     border: none;
     background-color: transparent;
-    font-family: var(--lora);
+    font-family: var(--lora), serif;
     font-size: var(--nav-tab-fs);
     color: var(--sunlit-clay);
     cursor: pointer;
+}
+
+section {
+    padding: var(--spacing-600);
+}
+
+.green-section {
+    background-color: var(--primary-green);
+    color: var(--primary-cream);
+}
+
+.cream-section {
+    background-color: var(--primary-cream);
+    color: var(--text-charcoal);
+}
+
+.pretitle {
+    font-size: var(--pretitle-fs);
+    letter-spacing: 3px;
+}
+
+.content-title {
+    font-size: var(--content-title-fs);
+    font-weight: bold;
+}
+
+.secondary-title {
+    color: var(--sunlit-clay);
+    font-family: var(--playfair-italic), serif;
+    font-style: italic;
+    font-weight: 700;
+    
+}
+
+.content-description {
+    font-size: var(--content-description-fs);
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-400);
+}
+
+.hero-content-text {
+    max-width: 40%;
+}
+
+
+
+#bakery-img {
+    height: 30rem;
 }
