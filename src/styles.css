@@ -103,8 +103,8 @@ table {
     --saddle-brown: #884e1b;
 
     --logo-fs: 1.8rem;
-    --nav-tab-fs: 1rem;
-    --pretitle-fs: 1rem;
+    --nav-tab-fs: 1.2rem;
+    --pretitle-fs: 1.1rem;
     --content-title-fs: 5rem;
     --secondary-title-fs: ;
     --content-description-fs: 1.4rem;
@@ -184,6 +184,7 @@ section {
 .pretitle {
     font-size: var(--pretitle-fs);
     letter-spacing: 5px;
+    font-weight: 500;
 }
 
 .content-title {
