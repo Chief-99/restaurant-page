@@ -142,11 +142,16 @@ header {
 #navbar {
     background-color: var(--nav-green);
     color: var(--primary-cream);
-    padding: var(--spacing-400);
+    padding: var(--spacing-400) var(--spacing-600);
     font-size: var(--logo-fs);
     display: flex;
     justify-content: space-between;
     border-bottom: solid 3px var(--saddle-brown);
+}
+
+.nav-tabs {
+    display: flex;
+    gap: var(--spacing-600);
 }
 
 #navbar button {
