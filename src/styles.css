@@ -355,3 +355,12 @@ section {
     flex-direction: column;
     gap: var(--spacing-400);
 }
+
+.specials-card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.special-card:nth-child(1) {
+    grid-column: span 2;
+}
