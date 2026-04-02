@@ -97,6 +97,7 @@ table {
     --text-charcoal: #2e362a;
     --nav-green: #1F2A13;
     --primary-green: #283618;
+    --card-green: #30411d;
     --secondary-green: #606c38;
     --primary-cream: #fefae0;
     --sunlit-clay: #dda15e;
@@ -313,10 +314,21 @@ section {
 }
 
 .offering-container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: var(--spacing-100);
+}
+
+.offering-option:nth-child(-n+3) {
+    grid-column: span 2;
+}
+
+.offering-option:nth-child(4),
+.offering-option:nth-child(5) {
+    grid-column: span 3;
 }
 
 .offering-option {
-    flex: 1 1 33.33%;
+    border: solid 1px var(--saddle-brown);
+    background-color: var(--card-green);
 }
