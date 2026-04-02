@@ -109,8 +109,8 @@ table {
     --content-title-fs: 5rem;
     --secondary-title-fs: ;
     --content-description-fs: 1.4rem;
-    --option-title-fs: 2rem;
-    --option-description-fs: 1.2rem;
+    --option-title-fs: 2.4rem;
+    --option-description-fs: 1.3rem;
     --special-type-fs: ;
     --special-card-title-fs: ;
     --special-description-fs: ;
@@ -316,7 +316,7 @@ section {
 .offering-container {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    gap: var(--spacing-100);
+    gap: var(--spacing-200);
 }
 
 .offering-option:nth-child(-n+3) {
@@ -332,6 +332,10 @@ section {
     border: solid 1px var(--saddle-brown);
     background-color: var(--card-green);
     padding: var(--spacing-600);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-200);
+    cursor: pointer;
 }
 
 .option-title {
@@ -343,4 +347,5 @@ section {
 .option-description {
     font-size: var(--option-description-fs);
     color: var(--sunlit-clay);
+    line-height: 1.5;
 }
