@@ -109,8 +109,8 @@ table {
     --content-title-fs: 5rem;
     --secondary-title-fs: ;
     --content-description-fs: 1.4rem;
-    --option-title-fs: ;
-    --option-description-fs: ;
+    --option-title-fs: 2rem;
+    --option-description-fs: 1.2rem;
     --special-type-fs: ;
     --special-card-title-fs: ;
     --special-description-fs: ;
@@ -331,4 +331,16 @@ section {
 .offering-option {
     border: solid 1px var(--saddle-brown);
     background-color: var(--card-green);
+    padding: var(--spacing-600);
+}
+
+.option-title {
+    font-family: var(--playfair-italic), serif;
+    font-size: var(--option-title-fs);
+    font-weight: 600;
+}
+
+.option-description {
+    font-size: var(--option-description-fs);
+    color: var(--sunlit-clay);
 }
