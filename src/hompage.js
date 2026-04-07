@@ -1,6 +1,7 @@
 function buildHomepage() {
     const content = document.getElementById('content');
     // hero section
+
     const heroSection = document.createElement('section');
     const heroContent = document.createElement('div');
     const heroContentText = document.createElement('div');
@@ -36,6 +37,7 @@ function buildHomepage() {
     content.append(heroSection);
 
     // story section
+
     const storySection = document.createElement('section');
     const storyContent = document.createElement('div');
     const storyIconFrame = document.createElement('div');
@@ -80,6 +82,7 @@ function buildHomepage() {
     content.append(storySection);
 
     // offering section
+
     const offeringSection = document.createElement('section');
     const offeringContent = document.createElement('div');
     const offeringPretitle = document.createElement('span');
@@ -150,6 +153,76 @@ function buildHomepage() {
     offeringContent.append(offeringPretitle, offeringTitle, offeringDescription, offeringContainer);
     offeringSection.append(offeringContent);
     content.append(offeringSection);
+
+    // specials section
+
+    const specialsSection = document.createElement('section');
+    const specialsContent = document.createElement('div');
+    const specialsPretitle = document.createElement('span');
+    const specialsTitle = document.createElement('h2');
+    const specialsSecondary = document.createElement('span');
+    const specialsContainer = document.createElement('div');
+    const featuredCard = document.createElement('div');
+    const featuredType = document.createElement('p');
+    const featuredTitle = document.createElement('h3');
+    const featuredDescription = document.createElement('p');
+    const featuredPrice = document.createElement('p');
+    const specialCard2 = document.createElement('div');
+    const specialType2 = document.createElement('p');
+    const specialTitle2 = document.createElement('h3');
+    const specialDescription2 = document.createElement('p');
+    const specialPrice2 = document.createElement('p');
+    const specialCard3 = document.createElement('div');
+    const specialType3 = document.createElement('p');
+    const specialTitle3 = document.createElement('h3');
+    const specialDescription3 = document.createElement('p');
+    const specialPrice3 = document.createElement('p');
+
+    specialsSection.classList.add('specials-section', 'cream-section');
+    specialsContent.classList.add('specials-content');
+    specialsPretitle.classList.add('out-the-oven', 'pretitle');
+    specialsTitle.classList.add('specials-title', 'content-title');
+    specialsSecondary.classList.add('secondary-title');
+    specialsContainer.classList.add('specials-card-container');
+    featuredCard.classList.add('special-card', 'featured-special');
+    featuredType.classList.add('special-type');
+    featuredTitle.classList.add('special-card-title', 'featured-special-title');
+    featuredDescription.classList.add('special-description');
+    featuredPrice.classList.add('special-price', 'featured-price');
+    specialCard2.classList.add('special-card');
+    specialType2.classList.add('special-type');
+    specialTitle2.classList.add('special-card-title');
+    specialDescription2.classList.add('special-description');
+    specialPrice2.classList.add('special-price');
+    specialCard3.classList.add('special-card');
+    specialType3.classList.add('special-type');
+    specialTitle3.classList.add('special-card-title');
+    specialDescription3.classList.add('special-description');
+    specialPrice3.classList.add('special-price');
+
+    specialsPretitle.textContent = '-WHAT\'S OUT THE OVEN';
+    specialsSecondary.textContent = 'specials';
+    specialsTitle.append('Today\'s ', specialsSecondary);
+    featuredType.textContent = 'BREAD OF THE DAY';
+    featuredTitle.textContent = 'Whole Wheat Sourdough';
+    featuredDescription.textContent = '72-hour cold ferment. Dark, crackled crust. Open crumb. Made with stoneground wheat from a local mill - the kind of loaf that warms your heart and your belly.';
+    featuredPrice.textContent = 'R68 per loaf';
+    specialType2.textContent = 'DESSERT SPECIAL';
+    specialTitle2.textContent = 'Malva Pudding';
+    specialDescription2.textContent = 'Some things don\'t need improving. Sticky, spongy and soaked through with a signature cream. Served hot. Gone fast.';
+    specialPrice2.textContent = 'R34 per slice';
+    specialType3.textContent = 'SWEET TREAT';
+    specialTitle3.textContent = 'Cheesecake';
+    specialDescription3.textContent = 'Baked New York style, with a buttery biscuit base and a silky smooth cream cheese filling. Served plain or with fruit compote - ask at the counter.';
+    specialPrice3.textContent = 'R40 per slice';
+
+    featuredCard.append(featuredType, featuredTitle, featuredDescription, featuredPrice);
+    specialCard2.append(specialType2, specialTitle2, specialDescription2, specialPrice2);
+    specialCard3.append(specialType3, specialTitle3, specialDescription3, specialPrice3);
+    specialsContainer.append(featuredCard, specialCard2, specialCard3);
+    specialsContent.append(specialsPretitle, specialsTitle, specialsContainer);
+    specialsSection.append(specialsContent);
+    content.append(specialsSection);
 }
 
 export { buildHomepage };
