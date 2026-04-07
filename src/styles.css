@@ -111,10 +111,10 @@ table {
     --content-description-fs: 1.4rem;
     --option-title-fs: 2.4rem;
     --option-description-fs: 1.3rem;
-    --special-type-fs: ;
-    --special-card-title-fs: ;
-    --special-description-fs: ;
-    --special-price-fs: ;
+    --special-type-fs: 1rem;
+    --special-card-title-fs: 2rem;
+    --special-description-fs: 1rem;
+    --special-price-fs: 1.3rem;
 
     --lora: 'Lora';
     --playfair: 'Playfair Display';
@@ -359,7 +359,7 @@ section {
 .specials-card-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: var(--spacing-400);
+    gap: var(--spacing-200);
 }
 
 .special-card:nth-child(1) {
@@ -367,9 +367,33 @@ section {
 }
 
 .special-card {
-    border: solid 1px var(--primary-green);
+    border: solid 1px var(--secondary-green);
     padding: var(--spacing-400);
     display: flex;
     flex-direction: column;
     gap: var(--spacing-200);
+}
+
+.special-card-title {
+    font-family: var(--lora);
+    font-size: var(--special-card-title-fs);
+    font-weight: 500;
+}
+
+.special-price {
+    font-family: var(--playfair-italic);
+    font-weight: 500;
+    font-size: var(--special-price-fs);
+    color: var(--saddle-brown);
+}
+
+.featured-special {
+    background-color: var(--secondary-green);
+    color: var(--primary-cream);
+    border-color: var(--sunlit-clay);
+}
+
+.featured-price {
+    color: var(--sunlit-clay);
+    font-size: 1.5rem;
 }
