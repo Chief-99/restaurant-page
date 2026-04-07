@@ -25,7 +25,7 @@ function buildHomepage() {
 
     establishmentPretitle.textContent = '- EST. 1987 CAPE TOWN';
     heroSecondary.textContent = 'love,';
-    heroTitle.append('Baked with', heroSecondary, 'the old way.');
+    heroTitle.append('Baked with ', heroSecondary, ' the old way.');
     heroDescription.textContent = 'From our Victorian corner kitchen to your table - breads, treats and cakes made slowly, with the freshest ingredients, just as they should be.';
     heroButton.textContent = 'Check out our specials';
 
