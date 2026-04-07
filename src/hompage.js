@@ -223,6 +223,91 @@ function buildHomepage() {
     specialsContent.append(specialsPretitle, specialsTitle, specialsContainer);
     specialsSection.append(specialsContent);
     content.append(specialsSection);
+
+    // location section
+
+    const locationSection = document.createElement('section');
+    const locationContent = document.createElement('div');
+    const locationText = document.createElement('div');
+    const locationTitle = document.createElement('h2');
+    const locationSecondary = document.createElement('span');
+    const locationDescription = document.createElement('p');
+    const locationDetails = document.createElement('div');
+    const locationCard1 = document.createElement('div');
+    const locationCard2 = document.createElement('div');
+    const locationCard3 = document.createElement('div');
+    const locationCard4 = document.createElement('div');
+    const locationCardTitle1 = document.createElement('span');
+    const locationCardTitle2 = document.createElement('span');
+    const locationCardTitle3 = document.createElement('span');
+    const locationCardTitle4 = document.createElement('span');
+    const locationCardDescriptionContainer1 = document.createElement('div');
+    const locationCardDescriptionContainer2 = document.createElement('div');
+    const locationCardDescriptionContainer3 = document.createElement('div');
+    const locationCardDescriptionContainer4 = document.createElement('div');
+    const locationCardDescription1_1 = document.createElement('p')
+    const locationCardDescription1_2 = document.createElement('p')
+    const locationCardDescription2_1 = document.createElement('p')
+    const locationCardDescription2_2 = document.createElement('p')
+    const locationCardDescription3_1 = document.createElement('p')
+    const locationCardDescription3_2 = document.createElement('p')
+    const locationCardDescription4_1 = document.createElement('p')
+
+    locationSection.classList.add('location-section', 'brown-section');
+    locationContent.classList.add('location-content');
+    locationText.classList.add('location-text');
+    locationTitle.classList.add('location-title', 'content-title');
+    locationSecondary.classList.add('secondary-title');
+    locationDescription.classList.add('location-description');
+    locationDetails.classList.add('location-details');
+    locationCard1.classList.add('location-card');
+    locationCard2.classList.add('location-card');
+    locationCard3.classList.add('location-card');
+    locationCard4.classList.add('location-card');
+    locationCardTitle1.classList.add('location-card-title');
+    locationCardTitle2.classList.add('location-card-title');
+    locationCardTitle3.classList.add('location-card-title');
+    locationCardTitle4.classList.add('location-card-title');
+    locationCardDescriptionContainer1.classList.add('location-card-description-container');
+    locationCardDescriptionContainer2.classList.add('location-card-description-container');
+    locationCardDescriptionContainer3.classList.add('location-card-description-container');
+    locationCardDescriptionContainer4.classList.add('location-card-description-container');
+    locationCardDescription1_1.classList.add('location-card-description');
+    locationCardDescription1_2.classList.add('location-card-description');
+    locationCardDescription2_1.classList.add('location-card-description');
+    locationCardDescription2_2.classList.add('location-card-description');
+    locationCardDescription3_1.classList.add('location-card-description');
+    locationCardDescription3_2.classList.add('location-card-description');
+    locationCardDescription4_1.classList.add('location-card-description');
+
+    locationSecondary.textContent = 'the bicycle.';
+    locationTitle.append('Come find ', locationSecondary);
+    locationDescription.textContent = 'We\'re the old Victorian building with the green door and the bicycle out front. You\'ll smell us before you see us.';
+    locationCardTitle1.textContent = 'ADDRESS';
+    locationCardTitle2.textContent = 'HOURS';
+    locationCardTitle3.textContent = 'WEEKEND';
+    locationCardTitle4.textContent = 'PHONE';
+    locationCardDescription1_1.textContent = '14 Buitenkant Street';
+    locationCardDescription1_2.textContent = 'Cape Town, 8001';
+    locationCardDescription2_1.textContent = 'Mon - Fri';
+    locationCardDescription2_2.textContent = '6:00 - 16:00';
+    locationCardDescription3_1.textContent = 'Sunday';
+    locationCardDescription3_2.textContent = '7:00 - 14:00';
+    locationCardDescription4_1.textContent = '021 555 0187';
+
+    locationCardDescriptionContainer1.append(locationCardDescription1_1, locationCardDescription1_2);
+    locationCardDescriptionContainer2.append(locationCardDescription2_1, locationCardDescription2_2);
+    locationCardDescriptionContainer3.append(locationCardDescription3_1, locationCardDescription3_2);
+    locationCardDescriptionContainer4.append(locationCardDescription4_1);
+    locationCard1.append(locationCardTitle1, locationCardDescriptionContainer1);
+    locationCard2.append(locationCardTitle2, locationCardDescriptionContainer2);
+    locationCard3.append(locationCardTitle3, locationCardDescriptionContainer3);
+    locationCard4.append(locationCardTitle4, locationCardDescriptionContainer4);
+    locationDetails.append(locationCard1, locationCard2, locationCard3, locationCard4);
+    locationText.append(locationTitle, locationDescription);
+    locationContent.append(locationText, locationDetails);
+    locationSection.append(locationContent);
+    content.append(locationSection);
 }
 
 export { buildHomepage };

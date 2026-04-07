@@ -454,7 +454,7 @@ section {
     /* gap: var(--spacing-800); */
 }
 
-.location-detail-card {
+.location-card {
     padding: var(--spacing-600) var(--spacing-800);
     display: flex;
     flex-direction: column;
@@ -462,6 +462,6 @@ section {
     line-height: 1.2;
 }
 
-.location-details-title {
+.location-card-title {
     opacity: 0.4;
 }
