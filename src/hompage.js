@@ -78,6 +78,78 @@ function buildHomepage() {
     storyContent.append(storyIconFrame, storyContentText)
     storySection.append(storyContent);
     content.append(storySection);
+
+    // offering section
+    const offeringSection = document.createElement('section');
+    const offeringContent = document.createElement('div');
+    const offeringPretitle = document.createElement('span');
+    const offeringTitle = document.createElement('h2');
+    const offeringSecondary = document.createElement('span');
+    const offeringDescription = document.createElement('p');
+    const offeringContainer = document.createElement('div');
+    const offeringOption1 = document.createElement('div');
+    const optionTitle1 = document.createElement('p');
+    const optionDescription1 = document.createElement('p');
+    const offeringOption2 = document.createElement('div');
+    const optionTitle2 = document.createElement('p');
+    const optionDescription2 = document.createElement('p');
+    const offeringOption3 = document.createElement('div');
+    const optionTitle3 = document.createElement('p');
+    const optionDescription3 = document.createElement('p');
+    const offeringOption4 = document.createElement('div');
+    const optionTitle4 = document.createElement('p');
+    const optionDescription4 = document.createElement('p');
+    const offeringOption5 = document.createElement('div');
+    const optionTitle5 = document.createElement('p');
+    const optionDescription5 = document.createElement('p');
+
+    offeringSection.classList.add('offering-section', 'green-section');
+    offeringContent.classList.add('offering-content');
+    offeringPretitle.classList.add('what-we-make', 'pretitle');
+    offeringTitle.classList.add('offering-title', 'content-title');
+    offeringSecondary.classList.add('secondary-title');
+    offeringDescription.classList.add('offering-description', 'content-description');
+    offeringContainer.classList.add('offering-container');
+    offeringOption1.classList.add('offering-option');
+    offeringOption2.classList.add('offering-option');
+    offeringOption3.classList.add('offering-option');
+    offeringOption4.classList.add('offering-option');
+    offeringOption5.classList.add('offering-option');
+    optionTitle1.classList.add('option-title');
+    optionTitle2.classList.add('option-title');
+    optionTitle3.classList.add('option-title');
+    optionTitle4.classList.add('option-title');
+    optionTitle5.classList.add('option-title');
+    optionDescription1.classList.add('option-description');
+    optionDescription2.classList.add('option-description');
+    optionDescription3.classList.add('option-description');
+    optionDescription4.classList.add('option-description');
+    optionDescription5.classList.add('option-description');
+
+    offeringPretitle.textContent = '- WHAT WE MAKE';
+    offeringSecondary.textContent = 'oven';
+    offeringTitle.append('From our ', offeringSecondary, ' to your table');
+    offeringDescription.textContent = 'Every item made in-house, fresh each morning';
+    optionTitle1.textContent = 'Breads';
+    optionTitle2.textContent = 'Cakes';
+    optionTitle3.textContent = 'Sandwiches';
+    optionTitle4.textContent = 'Sweet treats';
+    optionTitle5.textContent = 'Teas';
+    optionDescription1.textContent = 'The heart and soul of our bakery. Sourdough, rye, seeded and more.';
+    optionDescription2.textContent = 'Every occassion deserves something made with care. From silky baked cheesecake to everyday slices of red velvet - baked and ready for you at the counter.';
+    optionDescription3.textContent = 'Made on our own bread, spread with love, every time. Honest fillings, no shortcuts - the kind of lunch worth sitting down for.';
+    optionDescription4.textContent = 'Make your Tuesday feel special with some of our cookies, scones, milk tart and more. Be sure to get here quick they might be gone by afternoon.';
+    optionDescription5.textContent = 'A good slice of something belongs with a good cup of tea. Wee keep it simple with our small, considered selection brewed properly and served warm.';
+
+    offeringOption1.append(optionTitle1, optionDescription1);
+    offeringOption2.append(optionTitle2, optionDescription2);
+    offeringOption3.append(optionTitle3, optionDescription3);
+    offeringOption4.append(optionTitle4, optionDescription4);
+    offeringOption5.append(optionTitle5, optionDescription5);
+    offeringContainer.append(offeringOption1, offeringOption2, offeringOption3, offeringOption4, offeringOption5);
+    offeringContent.append(offeringPretitle, offeringTitle, offeringDescription, offeringContainer);
+    offeringSection.append(offeringContent);
+    content.append(offeringSection);
 }
 
 export { buildHomepage };
