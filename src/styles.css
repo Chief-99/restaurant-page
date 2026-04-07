@@ -115,6 +115,8 @@ table {
     --special-card-title-fs: 2rem;
     --special-description-fs: 1rem;
     --special-price-fs: 1.3rem;
+    --location-description-fs: 1.3rem;
+    --location-details-fs: 1rem;
 
     --lora: 'Lora';
     --playfair: 'Playfair Display';
@@ -181,6 +183,11 @@ section {
 .cream-section {
     background-color: var(--primary-cream);
     color: var(--text-charcoal);
+}
+
+.brown-section {
+    background-color: var(--saddle-brown);
+    color: var(--primary-cream);
 }
 
 .pretitle {
@@ -396,4 +403,40 @@ section {
 .featured-price {
     color: var(--sunlit-clay);
     font-size: 1.5rem;
+}
+
+/*& location section  */
+.location-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.location-text {
+    max-width: 32rem;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-400);
+}
+
+.location-description {
+    font-size: var(--location-description-fs);
+}
+
+.location-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    /* gap: var(--spacing-800); */
+}
+
+.location-detail-card {
+    padding: var(--spacing-600) var(--spacing-800);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-200);
+    line-height: 1.2;
+}
+
+.location-details-title {
+    opacity: 0.4;
 }
