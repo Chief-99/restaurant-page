@@ -119,6 +119,7 @@ table {
     --special-price-fs: 1.3rem;
     --location-description-fs: 1.3rem;
     --location-details-fs: 1rem;
+    --footer-logo-fs: 1.5rem;
 
     --lora: 'Lora';
     --playfair: 'Playfair Display';
@@ -464,4 +465,28 @@ section {
 
 .location-card-title {
     opacity: 0.4;
+}
+
+/*& footer */
+
+footer {
+    background-color: var(--nav-green);
+    display: flex;
+    justify-content: space-between;
+    color: var(--primary-cream);
+    padding: var(--spacing-600);
+    font-family: var(--playfair-italic);
+}
+
+.footer-logo {
+    font-size: var(--footer-logo-fs);
+}
+
+.footer-text {
+    opacity: 0.5;
+}
+
+.copyright {
+    opacity: 0.5;
+    font-family: var(--lora);
 }
