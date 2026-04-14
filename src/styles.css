@@ -121,7 +121,7 @@ table {
     --location-details-fs: 1rem;
     --menu-pretitle-fs: 0.8rem;
     --menu-title-fs: 2.5rem;
-    --item-title-fs: ;
+    --item-title-fs: 1.5rem;
     --item-description-fs: ;
     --price-fs: ;
     --footer-logo-fs: 1.5rem;
@@ -474,7 +474,6 @@ section {
 }
 
 /** menu page */
-/*& general styling */
 
 .menu-section {
     width: 80%;
@@ -507,7 +506,69 @@ section {
     font-family: var(--playfair-italic);
 }
 
-/*& footer */
+.menu-item-container {
+    display: grid;
+    gap: var(--spacing-200);
+}
+
+.menu-item-container {
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+}
+
+.menu-item-card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-100);
+    padding: var(--spacing-400);
+    position: relative;
+}
+
+.cream-section .menu-item-card {
+    border: solid 1px var(--sunlit-clay);
+    box-shadow: 4px 4px 8px var(--saddle-brown);
+}
+
+.green-section .menu-item-card {
+    border: solid 1px var(--saddle-brown);
+    box-shadow: 4px 4px 8px rgb(15, 43, 12);
+}
+
+.brown-section .menu-item-card {
+    border: solid 1px var(--sunlit-clay);
+    box-shadow: 4px 4px 8px rgb(92, 46, 12);
+}
+
+.price {
+    position: absolute;
+    right: var(--spacing-200);
+    top: var(--spacing-200);
+    font-family: var(--playfair-italic);
+    color: var(--saddle-brown);
+    font-weight: 500;
+}
+
+.green-section .price,
+.brown-section .price {
+    color: var(--sunlit-clay);
+}
+
+.menu-item-text {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-100);
+    font-family: var(--lora), serif;
+}
+
+.item-title {
+    font-size: var(--item-title-fs);
+}
+
+.cream-section .item-description {
+    color: var(--text-charcoal);
+    opacity: 0.8;
+}
+
+/** footer */
 
 footer {
     background-color: var(--nav-green);
