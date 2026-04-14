@@ -2,8 +2,10 @@ import './styles.css';
 import bakeryBuilding from './images/bakery-building.svg';
 import bakeryShelf from './images/bakery-shelf.svg';
 import { buildHomepage } from './hompage.js';
+import { buildMenuPage } from './menu-page.js';
 
 // buildHomepage();
+buildMenuPage();
 
 let bakery = document.getElementById('bakery-img');
 let shelf = document.getElementById('shelf-img');
