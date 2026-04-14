@@ -175,6 +175,7 @@ header {
     color: var(--sunlit-clay);
     cursor: pointer;
     transition: opacity 200ms;
+    letter-spacing: 2px;
 }
 
 /*? hover states  */
