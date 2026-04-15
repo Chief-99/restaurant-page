@@ -281,7 +281,144 @@ function buildMenuPage() {
     cakesContent.append(cakesPretitle, cakesTitle, cakesItemContainer);
     cakesSection.append(cakesContent);
     content.append(cakesSection);
-    
+
+    const sweetTreatsSection = document.createElement('section');
+    const sweetTreatsContent = document.createElement('div');
+    const sweetTreatsPretitle = document.createElement('p');
+    const sweetTreatsTitle = document.createElement('h2');
+    const sweetTreatsSecondary = document.createElement('span');
+    const sweetTreatsItemContainer = document.createElement('div');
+
+    sweetTreatsSection.classList.add('sweet-treats-section', 'cream-section', 'menu-section');
+    sweetTreatsContent.classList.add('sweet-treats-content', 'menu-content');
+    sweetTreatsPretitle.classList.add('sweet-treats-pretitle', 'pretitle');
+    sweetTreatsTitle.classList.add('sweet-treats-title', 'menu-title');
+    sweetTreatsSecondary.classList.add('secondary-title');
+    sweetTreatsItemContainer.classList.add('menu-item-container');
+
+    sweetTreatsPretitle.textContent = 'LITTLE SOMETHINGS';
+    sweetTreatsSecondary.textContent = 'Treats';
+    sweetTreatsTitle.append('Sweet ', sweetTreatsSecondary);
+
+    const chocChipCard = document.createElement('div');
+    const chocChipText = document.createElement('div');
+    const chocChipTitle = document.createElement('p');
+    const chocChipDescription = document.createElement('p');
+    const chocChipPrice = document.createElement('p');
+
+    chocChipCard.classList.add('menu-item-card');
+    chocChipText.classList.add('menu-item-text');
+    chocChipTitle.classList.add('item-title');
+    chocChipDescription.classList.add('item-description');
+    chocChipPrice.classList.add('price');
+
+    chocChipTitle.textContent = 'Choc Chip Cookies';
+    chocChipDescription.textContent = 'Big, golden-edged, chewy in the middle. Dark chocolate chunks and a pinch of sea salt.';
+    chocChipPrice.textContent = 'R18 each';
+
+    chocChipText.append(chocChipTitle, chocChipDescription);
+    chocChipCard.append(chocChipText, chocChipPrice);
+
+    const lofthouseCard = document.createElement('div');
+    const lofthouseText = document.createElement('div');
+    const lofthouseTitle = document.createElement('p');
+    const lofthouseDescription = document.createElement('p');
+    const lofthousePrice = document.createElement('p');
+
+    lofthouseCard.classList.add('menu-item-card');
+    lofthouseText.classList.add('menu-item-text');
+    lofthouseTitle.classList.add('item-title');
+    lofthouseDescription.classList.add('item-description');
+    lofthousePrice.classList.add('price');
+
+    lofthouseTitle.textContent = 'Lofthouse Cookies';
+    lofthouseDescription.textContent = 'Thick, pillowy, soft-frosted sugar cookies. Topped with coloured buttercream — the kind that melt on your tongue.';
+    lofthousePrice.textContent = 'R20 each';
+
+    lofthouseText.append(lofthouseTitle, lofthouseDescription);
+    lofthouseCard.append(lofthouseText, lofthousePrice);
+
+    const sconesCard = document.createElement('div');
+    const sconesText = document.createElement('div');
+    const sconesTitle = document.createElement('p');
+    const sconesDescription = document.createElement('p');
+    const sconesPrice = document.createElement('p');
+
+    sconesCard.classList.add('menu-item-card');
+    sconesText.classList.add('menu-item-text');
+    sconesTitle.classList.add('item-title');
+    sconesDescription.classList.add('item-description');
+    sconesPrice.classList.add('price');
+
+    sconesTitle.textContent = 'Scones';
+    sconesDescription.textContent = 'Tall, flaky, golden. Plain or fruit. Served with clotted cream and jam — the proper way.';
+    sconesPrice.textContent = 'R24 each';
+
+    sconesText.append(sconesTitle, sconesDescription);
+    sconesCard.append(sconesText, sconesPrice);
+
+    const muffinsCard = document.createElement('div');
+    const muffinsText = document.createElement('div');
+    const muffinsTitle = document.createElement('p');
+    const muffinsDescription = document.createElement('p');
+    const muffinsPrice = document.createElement('p');
+
+    muffinsCard.classList.add('menu-item-card');
+    muffinsText.classList.add('menu-item-text');
+    muffinsTitle.classList.add('item-title');
+    muffinsDescription.classList.add('item-description');
+    muffinsPrice.classList.add('price');
+
+    muffinsTitle.textContent = 'Muffins';
+    muffinsDescription.textContent = 'Domed and generous. Rotating flavours baked fresh each morning — ask at the counter for today\'s.';
+    muffinsPrice.textContent = 'R26 each';
+
+    muffinsText.append(muffinsTitle, muffinsDescription);
+    muffinsCard.append(muffinsText, muffinsPrice);
+
+    const cakePopsCard = document.createElement('div');
+    const cakePopsText = document.createElement('div');
+    const cakePopsTitle = document.createElement('p');
+    const cakePopsDescription = document.createElement('p');
+    const cakePopsPrice = document.createElement('p');
+
+    cakePopsCard.classList.add('menu-item-card');
+    cakePopsText.classList.add('menu-item-text');
+    cakePopsTitle.classList.add('item-title');
+    cakePopsDescription.classList.add('item-description');
+    cakePopsPrice.classList.add('price');
+
+    cakePopsTitle.textContent = 'Cake Pops';
+    cakePopsDescription.textContent = 'Crumbled sponge and frosting, rolled into balls and dipped in chocolate. A joy on a stick.';
+    cakePopsPrice.textContent = 'R22 each';
+
+    cakePopsText.append(cakePopsTitle, cakePopsDescription);
+    cakePopsCard.append(cakePopsText, cakePopsPrice);
+
+    const milkTartCard = document.createElement('div');
+    const milkTartText = document.createElement('div');
+    const milkTartTitle = document.createElement('p');
+    const milkTartDescription = document.createElement('p');
+    const milkTartPrice = document.createElement('p');
+
+    milkTartCard.classList.add('menu-item-card');
+    milkTartText.classList.add('menu-item-text');
+    milkTartTitle.classList.add('item-title');
+    milkTartDescription.classList.add('item-description');
+    milkTartPrice.classList.add('price');
+
+    milkTartTitle.textContent = 'Milk Tart';
+    milkTartDescription.textContent = 'A South African classic. Sweet pastry shell, creamy milk custard filling, dusted with cinnamon. Busi\'s grandmother\'s recipe.';
+    milkTartPrice.textContent = 'R30 / slice';
+
+    milkTartText.append(milkTartTitle, milkTartDescription);
+    milkTartCard.append(milkTartText, milkTartPrice);
+
+    sweetTreatsItemContainer.append(chocChipCard, lofthouseCard, sconesCard, muffinsCard, cakePopsCard, milkTartCard);
+    sweetTreatsContent.append(sweetTreatsPretitle, sweetTreatsTitle, sweetTreatsItemContainer);
+    sweetTreatsSection.append(sweetTreatsContent);
+    content.append(sweetTreatsSection);
+
 }
 
 export { buildMenuPage }
