@@ -175,6 +175,7 @@ header {
     color: var(--sunlit-clay);
     cursor: pointer;
     transition: opacity 200ms;
+    letter-spacing: 2px;
 }
 
 /*? hover states  */
@@ -184,6 +185,9 @@ header {
 
 /** homepage */
 /*& general styling */
+#content {
+    background-color: var(--card-green);
+}
 
 section {
     padding: var(--spacing-700);
@@ -478,6 +482,7 @@ section {
 .menu-section {
     width: 80%;
     justify-self: center;
+    scroll-margin-top: 5rem;
 }
 
 .menu-content {
@@ -566,6 +571,11 @@ section {
 .cream-section .item-description {
     color: var(--text-charcoal);
     opacity: 0.8;
+}
+
+.fruit-card {
+    grid-column: span 2;
+    opacity: 0.7;
 }
 
 /** footer */
