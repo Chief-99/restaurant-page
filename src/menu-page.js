@@ -515,6 +515,120 @@ function buildMenuPage() {
     sandwichesSection.append(sandwichesContent);
     content.append(sandwichesSection);
 
+    const teaSection = document.createElement('section');
+    const teaContent = document.createElement('div');
+    const teaPretitle = document.createElement('p');
+    const teaTitle = document.createElement('h2');
+    const teaItemContainer = document.createElement('div');
+
+    teaSection.classList.add('tea-section', 'cream-section', 'menu-section');
+    teaContent.classList.add('tea-content', 'menu-content');
+    teaPretitle.classList.add('tea-pretitle', 'pretitle');
+    teaTitle.classList.add('tea-title', 'menu-title');
+    teaItemContainer.classList.add('menu-item-container');
+
+    teaPretitle.textContent = 'WARM YOUR HEART AND YOUR HANDS';
+    teaTitle.textContent = 'Teas';
+
+    const hibiscusCard = document.createElement('div');
+    const hibiscusText = document.createElement('div');
+    const hibiscusTitle = document.createElement('p');
+    const hibiscusDescription = document.createElement('p');
+    const hibiscusPrice = document.createElement('p');
+
+    hibiscusCard.classList.add('menu-item-card');
+    hibiscusText.classList.add('menu-item-text');
+    hibiscusTitle.classList.add('item-title');
+    hibiscusDescription.classList.add('item-description');
+    hibiscusPrice.classList.add('price');
+
+    hibiscusTitle.textContent = 'Hibiscus';
+    hibiscusDescription.textContent = 'Tart, ruby red and floral. Served hot or ask for it iced on a warm day.';
+    hibiscusPrice.textContent = 'R28';
+
+    hibiscusText.append(hibiscusTitle, hibiscusDescription);
+    hibiscusCard.append(hibiscusText, hibiscusPrice);
+
+    const jasmineCard = document.createElement('div');
+    const jasmineText = document.createElement('div');
+    const jasmineTitle = document.createElement('p');
+    const jasmineDescription = document.createElement('p');
+    const jasminePrice = document.createElement('p');
+
+    jasmineCard.classList.add('menu-item-card');
+    jasmineText.classList.add('menu-item-text');
+    jasmineTitle.classList.add('item-title');
+    jasmineDescription.classList.add('item-description');
+    jasminePrice.classList.add('price');
+
+    jasmineTitle.textContent = 'Jasmine';
+    jasmineDescription.textContent = 'Delicate and gragrant. Green tea blossomed with jasmine flowers. Light and calming.';
+    jasminePrice.textContent = 'R28';
+
+    jasmineText.append(jasmineTitle, jasmineDescription);
+    jasmineCard.append(jasmineText, jasminePrice);
+
+    const rooibosCard = document.createElement('div');
+    const rooibosText = document.createElement('div');
+    const rooibosTitle = document.createElement('p');
+    const rooibosDescription = document.createElement('p');
+    const rooibosPrice = document.createElement('p');
+
+    rooibosCard.classList.add('menu-item-card');
+    rooibosText.classList.add('menu-item-text');
+    rooibosTitle.classList.add('item-title');
+    rooibosDescription.classList.add('item-description');
+    rooibosPrice.classList.add('price');
+
+    rooibosTitle.textContent = 'Rooibos';
+    rooibosDescription.textContent = 'Our proudly South African staple. Earthy, caffeine-free, and warming. Plain or with milk.';
+    rooibosPrice.textContent = 'R24';
+
+    rooibosText.append(rooibosTitle, rooibosDescription);
+    rooibosCard.append(rooibosText, rooibosPrice);
+
+    const greenTeaCard = document.createElement('div');
+    const greenTeaText = document.createElement('div');
+    const greenTeaTitle = document.createElement('p');
+    const greenTeaDescription = document.createElement('p');
+    const greenTeaPrice = document.createElement('p');
+
+    greenTeaCard.classList.add('menu-item-card');
+    greenTeaText.classList.add('menu-item-text');
+    greenTeaTitle.classList.add('item-title');
+    greenTeaDescription.classList.add('item-description');
+    greenTeaPrice.classList.add('price');
+
+    greenTeaTitle.textContent = 'Green Tea';
+    greenTeaDescription.textContent = 'Clean, grassy, and gently astringent. Brewed at the right temperature — not boiling — for a smooth cup.';
+    greenTeaPrice.textContent = 'R26';
+
+    greenTeaText.append(greenTeaTitle, greenTeaDescription);
+    greenTeaCard.append(greenTeaText, greenTeaPrice);
+
+    const fruitCard = document.createElement('div');
+    const fruitText = document.createElement('div');
+    const fruitTitle = document.createElement('p');
+    const fruitDescription = document.createElement('p');
+    const fruitPrice = document.createElement('p');
+
+    fruitCard.classList.add('menu-item-card', 'fruit-card');
+    fruitText.classList.add('menu-item-text');
+    fruitTitle.classList.add('item-title');
+    fruitDescription.classList.add('item-description');
+    fruitPrice.classList.add('price');
+
+    fruitTitle.textContent = 'Fruit Flavours';
+    fruitDescription.textContent = 'Peach, strawberry, orange and more — we\'re finalising our fruit tea selection. Ask at the counter for what\'s available today, or pop back soon.';
+    fruitPrice.textContent = 'Coming soon';
+
+    fruitText.append(fruitTitle, fruitDescription);
+    fruitCard.append(fruitText, fruitPrice);
+
+    teaItemContainer.append(hibiscusCard, jasmineCard, rooibosCard, greenTeaCard, fruitCard);
+    teaContent.append(teaPretitle, teaTitle, teaItemContainer);
+    teaSection.append(teaContent);
+    content.append(teaSection);
 }
 
 export { buildMenuPage }
