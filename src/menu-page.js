@@ -1,6 +1,7 @@
 import { clearContent } from './clear-content.js';
 
 function buildMenuPage() {
+    if (document.querySelector('.menu-section')) return;
     clearContent();
     const content = document.getElementById('content');
 

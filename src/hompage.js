@@ -1,4 +1,5 @@
 import { clearContent } from './clear-content.js';
+import { loadOption } from './menu-options.js';
 
 function buildHomepage() {
     clearContent();
@@ -311,6 +312,8 @@ function buildHomepage() {
     locationContent.append(locationText, locationDetails);
     locationSection.append(locationContent);
     content.append(locationSection);
+
+    loadOption();
 }
 
 export { buildHomepage };

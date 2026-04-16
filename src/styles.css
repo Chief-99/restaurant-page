@@ -192,6 +192,7 @@ header {
 section {
     padding: var(--spacing-700);
     letter-spacing: 2px;
+    scroll-margin-top: 5rem;
 }
 
 .green-section {
