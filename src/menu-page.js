@@ -1,4 +1,7 @@
+import { clearContent } from './clear-content.js';
+
 function buildMenuPage() {
+    clearContent();
     const content = document.getElementById('content');
 
     // bread section

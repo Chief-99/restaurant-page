@@ -1,4 +1,7 @@
+import { clearContent } from './clear-content.js';
+
 function buildHomepage() {
+    clearContent();
     const content = document.getElementById('content');
     // hero section
 
@@ -113,11 +116,11 @@ function buildHomepage() {
     offeringSecondary.classList.add('secondary-title');
     offeringDescription.classList.add('offering-description', 'content-description');
     offeringContainer.classList.add('offering-container');
-    offeringOption1.classList.add('offering-option');
-    offeringOption2.classList.add('offering-option');
-    offeringOption3.classList.add('offering-option');
-    offeringOption4.classList.add('offering-option');
-    offeringOption5.classList.add('offering-option');
+    offeringOption1.classList.add('offering-option', 'bread-option');
+    offeringOption2.classList.add('offering-option', 'cakes-option');
+    offeringOption3.classList.add('offering-option', 'sandwiches-option');
+    offeringOption4.classList.add('offering-option', 'sweet-treats-option');
+    offeringOption5.classList.add('offering-option', 'teas-option');
     optionTitle1.classList.add('option-title');
     optionTitle2.classList.add('option-title');
     optionTitle3.classList.add('option-title');

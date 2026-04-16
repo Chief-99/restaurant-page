@@ -482,6 +482,7 @@ section {
 .menu-section {
     width: 80%;
     justify-self: center;
+    scroll-margin-top: 5rem;
 }
 
 .menu-content {
