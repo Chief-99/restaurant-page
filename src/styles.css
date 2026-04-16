@@ -186,7 +186,7 @@ header {
 /** homepage */
 /*& general styling */
 #content {
-    background-color: var(--nav-green);
+    background-color: var(--card-green);
 }
 
 section {
