@@ -419,6 +419,102 @@ function buildMenuPage() {
     sweetTreatsSection.append(sweetTreatsContent);
     content.append(sweetTreatsSection);
 
+    const sandwichesSection = document.createElement('section');
+    const sandwichesContent = document.createElement('div');
+    const sandwichesPretitle = document.createElement('p');
+    const sandwichesTitle = document.createElement('h2');
+    const sandwichesItemContainer = document.createElement('div');
+
+    sandwichesSection.classList.add('sandwiches-section', 'brown-section', 'menu-section');
+    sandwichesContent.classList.add('sandwiches-content', 'menu-content');
+    sandwichesPretitle.classList.add('sandwiches-pretitle', 'pretitle');
+    sandwichesTitle.classList.add('sandwiches-title', 'menu-title');
+    sandwichesItemContainer.classList.add('menu-item-container');
+
+    sandwichesPretitle.textContent = 'ON OUR OWN BREAD';
+    sandwichesTitle.textContent = 'Sandwiches';
+
+    const chickenCard = document.createElement('div');
+    const chickenText = document.createElement('div');
+    const chickenTitle = document.createElement('p');
+    const chickenDescription = document.createElement('p');
+    const chickenPrice = document.createElement('p');
+
+    chickenCard.classList.add('menu-item-card');
+    chickenText.classList.add('menu-item-text');
+    chickenTitle.classList.add('item-title');
+    chickenDescription.classList.add('item-description');
+    chickenPrice.classList.add('price');
+
+    chickenTitle.textContent = 'Chicken Mayo';
+    chickenDescription.textContent = 'Tender pulled chicken, house-made mayo, lettuce and a touch of wholegrain mustard. On ciabatta or country white.';
+    chickenPrice.textContent = 'R58';
+
+    chickenText.append(chickenTitle, chickenDescription);
+    chickenCard.append(chickenText, chickenPrice);
+
+    const cheeseCard = document.createElement('div');
+    const cheeseText = document.createElement('div');
+    const cheeseTitle = document.createElement('p');
+    const cheeseDescription = document.createElement('p');
+    const cheesePrice = document.createElement('p');
+
+    cheeseCard.classList.add('menu-item-card');
+    cheeseText.classList.add('menu-item-text');
+    cheeseTitle.classList.add('item-title');
+    cheeseDescription.classList.add('item-description');
+    cheesePrice.classList.add('price');
+
+    cheeseTitle.textContent = 'Cheese Toastie';
+    cheeseDescription.textContent = 'Thick-cut country white, generously cheesed, pressed golden and crispy. Served with sliced tomato on the side.';
+    cheesePrice.textContent = 'R48';
+
+    cheeseText.append(cheeseTitle, cheeseDescription);
+    cheeseCard.append(cheeseText, cheesePrice);
+
+    const vegCard = document.createElement('div');
+    const vegText = document.createElement('div');
+    const vegTitle = document.createElement('p');
+    const vegDescription = document.createElement('p');
+    const vegPrice = document.createElement('p');
+
+    vegCard.classList.add('menu-item-card');
+    vegText.classList.add('menu-item-text');
+    vegTitle.classList.add('item-title');
+    vegDescription.classList.add('item-description');
+    vegPrice.classList.add('price');
+
+    vegTitle.textContent = 'Roasted Veg & Hummus';
+    vegDescription.textContent = 'Seasonal roasted vegetables, house hummus, rocket and a drizzle of olive oil. On sourdough or ciabatta.';
+    vegPrice.textContent = 'R62';
+
+    vegText.append(vegTitle, vegDescription);
+    vegCard.append(vegText, vegPrice);
+
+    const avoCard = document.createElement('div');
+    const avoText = document.createElement('div');
+    const avoTitle = document.createElement('p');
+    const avoDescription = document.createElement('p');
+    const avoPrice = document.createElement('p');
+
+    avoCard.classList.add('menu-item-card');
+    avoText.classList.add('menu-item-text');
+    avoTitle.classList.add('item-title');
+    avoDescription.classList.add('item-description');
+    avoPrice.classList.add('price');
+
+    avoTitle.textContent = 'Smashed Avo';
+    avoDescription.textContent = 'Fresh avo, lemon, chilli flakes, and flaky salt on thick-cut sourdough toast. Simple, done properly.';
+    avoPrice.textContent = 'R34';
+
+    avoText.append(avoTitle, avoDescription);
+    avoCard.append(avoText, avoPrice);
+
+    sandwichesItemContainer.append(chickenCard, cheeseCard, vegCard, avoCard);
+    sandwichesContent.append(sandwichesPretitle, sandwichesTitle, sandwichesItemContainer);
+    sandwichesSection.append(sandwichesContent);
+    content.append(sandwichesSection);
+
 }
 
 export { buildMenuPage }
